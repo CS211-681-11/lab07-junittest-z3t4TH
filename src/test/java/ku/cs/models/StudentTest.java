@@ -25,6 +25,7 @@ class StudentTest {
     }
 
     @Test
+    @DisplayName("ทดสอบเพิ่มเลขประจำตัว")
     void testIsId(){
         Student s = new Student("6710405508", "StudentTest");
         assertTrue(s.isId("6710405508"));
@@ -32,6 +33,7 @@ class StudentTest {
     }
 
     @Test
+    @DisplayName("ทดสอบเปลี่ยนชื่อ")
     void testChangeName() {
         Student s = new Student("6710405508", "StudentTest");
         s.changeName("Weerasak");
@@ -39,6 +41,7 @@ class StudentTest {
     }
 
     @Test
+    @DisplayName("ทดสอบชว่าชื่อมีอยู่จริง")
     void testIsNameContains() {
         Student s = new Student("6710405508", "Weerasak Thanomkai");
         assertTrue(s.isNameContains("Weerasak"));
